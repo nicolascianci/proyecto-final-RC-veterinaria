@@ -1,0 +1,7 @@
+.card-a-pages{
+  transition: transform 1.5s
+}
+
+.card-a-pages :hover {
+  transform: scale(1.1)
+}
