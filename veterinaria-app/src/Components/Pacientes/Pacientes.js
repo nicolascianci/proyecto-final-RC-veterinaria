@@ -16,7 +16,7 @@ const Pacientes = () => {
   }, [])
 
   return (
-    <div>
+    <div className="w-100">
       <div className="w-25 h-25">
   <img src={animales.message} className="card-img-top rounded-circle" alt="..." />
 </div>
