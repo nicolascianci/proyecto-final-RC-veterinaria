@@ -6,3 +6,25 @@
 .card-a-pages :hover {
   transform: scale(1.05);
 }
+
+@media (max-width: 767.98px){
+  .card-a-pages{
+    flex-wrap: wrap !important;
+  }
+  .card-page{
+    width: 100% !important;
+  }
+  .card-img{
+    height: 100%;
+    width: 100%;
+  }
+  .card-title{
+    font-size: 7vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+  .card-page{
+    width: 60% !important;
+  }
+}
