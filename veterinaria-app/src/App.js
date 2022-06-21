@@ -1,17 +1,30 @@
-import './App.css';
-// import ButtonSesion from './Components/ButtonSesion/ButtonSesion';
-// import ButtonTurno from './Components/ButtonTurno/ButtonTurno';
+import React from 'react';
 import Cards from './Components/Cards/Cards';
 import Pacientes from './Components/Pacientes/Pacientes';
+// import {Routes, Route} from 'react-router-dom';
+// import Home from './Pages/Home';
+// import Error from './Pages/Error';
+// import Nosotros from './Pages/Nosotros';
+// import Servicios from './Pages/Servicios';
 
 function App() {
   return (
-    <div className="App">
+    <>
+    <div>
       {/* <ButtonSesion />
       <ButtonTurno /> */}
       <Cards />
       <Pacientes />
-     </div>
+    </div>
+
+
+       {/* <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='*' element={<Error />} />
+        <Route path='/nosotros' element={<Nosotros />} />
+        <Route path='/servicios' element={<Servicios />} />
+       </Routes> */}
+    </>
   );
 }
 
