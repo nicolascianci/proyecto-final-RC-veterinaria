@@ -1,5 +1,6 @@
 import React from 'react';
 import Cards from './Components/Cards/Cards';
+import Carousel from './Components/Carousel/Carousel';
 import Pacientes from './Components/Pacientes/Pacientes';
 // import {Routes, Route} from 'react-router-dom';
 // import Home from './Pages/Home';
@@ -10,12 +11,13 @@ import Pacientes from './Components/Pacientes/Pacientes';
 function App() {
   return (
     <>
-    <div>
-      {/* <ButtonSesion />
-      <ButtonTurno /> */}
-      <Cards />
-      <Pacientes />
-    </div>
+      <div>
+        {/* <ButtonSesion />
+        <ButtonTurno /> */}
+        <Carousel />
+        <Cards />
+        <Pacientes />
+      </div>
 
 
        {/* <Routes>
