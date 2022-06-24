@@ -4,10 +4,12 @@ import Home from './Pages/Home';
 import Error from './Pages/Error';
 import Nosotros from './Pages/Nosotros';
 import Servicios from './Pages/Servicios';
+import Navbar from './Components/Navbar/Navbar';
 
 function App() {
   return (
-    <>
+    <div>
+    <Navbar />
       <BrowserRouter>
        <Routes>
         <Route path='/' element={<Home />} />
@@ -16,7 +18,7 @@ function App() {
         <Route path='/servicios' element={<Servicios />} />
        </Routes>
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 
