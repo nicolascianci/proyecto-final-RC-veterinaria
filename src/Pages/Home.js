@@ -3,6 +3,7 @@ import React from 'react';
 // // import ButtonTurno from '../Components/ButtonTurno/ButtonTurno';
 import Cards from '../Components/Cards/Cards';
 import Carousel from '../Components/Carousel/Carousel';
+import Contacto from '../Components/Contacto/Contacto';
 import Pacientes from '../Components/Pacientes/Pacientes';
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
       <ButtonTurno /> */}
       <Cards />
       <Pacientes />
+      <Contacto />
     </div>
   );
 };
