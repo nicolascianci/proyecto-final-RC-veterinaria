@@ -10,9 +10,9 @@ const Navbar = () => {
                 </div>
                 <div class="navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
+                    <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="/nosotros">Nosotros</a>
-                        </li>
+                    </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/servicios">Servicios</a>
                         </li>
