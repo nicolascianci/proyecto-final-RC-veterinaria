@@ -1,47 +1,40 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import './Nosotros.css';
 
 const Nosotros = () => {
   return (
-    <div class="m-3">
-  <section class="row d-flex align-items-center">
-  <div class="d-block w-50 py-4 px-4">
-  <h2>Nosotros</h2>
-  <p>Veterinaria Huellitas es un centro especializado en la atención integral de tu mascota. Ofrecemos a nuestros clientes una completa atención para los animales, ya sean perros, gatos o especies exóticas. Ofrecemos un servicio higiénico-sanitario completo, asesoramiento nutricional, contamos con servicio de análisis de laboratorio, peluquería, guardería, ente otros.</p>
+    <section class="section-nosotros m-3 d-flex">
+  <div class="texto-nosotros row align-items-center text-center">
+  <div class="d-block py-4 px-4">
+  <h5 className="m-1">Veterinaria Huellitas es un <strong>centro especializado en la atención integral</strong> de tu mascota. Ofrecemos a nuestros clientes una completa atención para los animales, ya sean perros, gatos o especies exóticas, un servicio higiénico-sanitario completo, asesoramiento nutricional, análisis de laboratorio, peluquería, guardería, entre otros.</h5><br />
 
     <h3>Valores</h3>
-    <h4>Profesionalidad</h4>
+    <h5><strong>Profesionalidad</strong></h5>
     <p>Buscamos siempre el mejor procedimiento, adaptándonos a las circunstancias individuales de cada caso.</p>
-    <h4>Cercanía</h4>
+    <h5><strong>Cercanía</strong></h5>
     <p>Centramos nuestro esfuerzo en la satisfacción del cliente, comprendiendo que, para la mayoría, su mascota es uno más de la familia.</p>
-    <h4>Pasión</h4>
+    <h5><strong>Pasión</strong></h5>
     <p>Somos unos enamorados de nuestra profesión y eso nos hace desempeñarla con orgullo y entusiasmo.</p>
-    <h4>Actualidad</h4>
+    <h5><strong>Actualidad</strong></h5>
     <p>Nos comprometemos a estar en permanente formación, para ofrecer a nuestros pacientes siempre la mejor atención.</p>
-    <h4>Responsabilidad</h4>
+    <h5><strong>Responsabilidad</strong></h5>
     <p>Estamos concienciados de que nuestro trabajo repercute en la salud pública y en el bienestar de la sociedad.</p>
+
+    <Link to="/servicios" className="btn btn-info m-4"><strong>Click aquí</strong> para conocer todos nuestros servicios</Link>
+  </div>
   </div>
 
-  <div class="d-block w-50 p-5">
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-          <img src="https://images.pexels.com/photos/6235666/pexels-photo-6235666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="https://images.pexels.com/photos/6235657/pexels-photo-6235657.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="https://images.pexels.com/photos/7470635/pexels-photo-7470635.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="https://images.pexels.com/photos/7469225/pexels-photo-7469225.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" class="d-block w-100" alt="..." />
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+  <div class="fotografias d-block">
+  <div class="card-group">
+    <img src="https://images.pexels.com/photos/6234616/pexels-photo-6234616.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-50" alt="..." />
+    <img src="https://images.pexels.com/photos/6235664/pexels-photo-6235664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-50" alt="..." />
+    <img src="https://images.pexels.com/photos/6235241/pexels-photo-6235241.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-50" alt="..." />
+    <img src="https://images.pexels.com/photos/7469227/pexels-photo-7469227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-50" alt="..." />
 </div>
+</div>
+
+</section>
   );
 };
 

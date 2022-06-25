@@ -5,7 +5,6 @@ import Error from './Pages/Error';
 import Nosotros from './Pages/Nosotros';
 import Servicios from './Pages/Servicios';
 import Navbar from './Components/Navbar/Navbar';
-
 function App() {
   return (
     <div>
