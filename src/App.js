@@ -5,6 +5,7 @@ import Error from './Pages/Error';
 import Nosotros from './Pages/Nosotros';
 import Servicios from './Pages/Servicios';
 import Navbar from './Components/Navbar/Navbar';
+import Footer from './Components/Footer/Footer';
 function App() {
   return (
     <div>
@@ -16,6 +17,7 @@ function App() {
         <Route path='/nosotros' element={<Nosotros />} />
         <Route path='/servicios' element={<Servicios />} />
        </Routes>
+       <Footer />
       </BrowserRouter>
     </div>
   );
