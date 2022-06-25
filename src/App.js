@@ -7,6 +7,7 @@ import Servicios from './Pages/Servicios';
 import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
 import Login from './Pages/Login';
+import Turnos from './Pages/Turnos';
 function App() {
   return (
     <div>
@@ -18,6 +19,7 @@ function App() {
         <Route path='/nosotros' element={<Nosotros />} />
         <Route path='/servicios' element={<Servicios />} />
         <Route path='/login' element={<Login />} />
+        <Route path='/turnos' element={<Turnos />} />
        </Routes>
        <Footer />
       </BrowserRouter>
