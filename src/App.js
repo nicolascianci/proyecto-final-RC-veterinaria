@@ -6,6 +6,7 @@ import Nosotros from './Pages/Nosotros';
 import Servicios from './Pages/Servicios';
 import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
+import Login from './Pages/Login';
 function App() {
   return (
     <div>
@@ -16,6 +17,7 @@ function App() {
         <Route path='*' element={<Error />} />
         <Route path='/nosotros' element={<Nosotros />} />
         <Route path='/servicios' element={<Servicios />} />
+        <Route path='/login' element={<Login />} />
        </Routes>
        <Footer />
       </BrowserRouter>
