@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -19,7 +20,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div class="navbar-button p-2">
-                    <button class="button iniciar-sesion mx-1 rounded">Iniciar sesion</button>
+                    <Link to="/login"><button class="button iniciar-sesion mx-1 rounded">Iniciar sesion</button></Link>
                     <button class="button pedir-turno mx-1 rounded">Pedir turno</button>
                 </div>
             </nav>
