@@ -8,6 +8,8 @@ import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
 import Login from './Pages/Login';
 import Turnos from './Pages/Turnos';
+// import ButtonSesion from'./Components/ButtonSesion';
+// import ButtonTurno from'./Components/ButtonTurno';
 function App() {
   return (
     <div>
@@ -21,6 +23,8 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/turnos' element={<Turnos />} />
        </Routes>
+       {/* <ButtonSesion />
+       <ButtonTurno /> */}
        <Footer />
       </BrowserRouter>
     </div>
