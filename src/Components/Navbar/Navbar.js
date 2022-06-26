@@ -28,6 +28,7 @@ const Navbar = () => {
                 <div class="navbar-button p-2">
                     <Link to="/login"><button class="button iniciar-sesion mx-1 rounded">Iniciar sesion</button></Link>
                     <Link to="/turnos"><button class="button pedir-turno mx-1 rounded">Pedir turno</button></Link>
+                    
                 </div>
             </nav>
         </header>
