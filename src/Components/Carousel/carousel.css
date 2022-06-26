@@ -1,3 +1,20 @@
-.bg-carousel{
-  background-color: #003566;
+.carousel-text{
+  position: relative;
+  z-index: 1;
+  display:table;
+  width:100%;
+  height:100%
+}
+
+.centrar-texto{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.text-carousel{
+  background-color: var(--color-principal);
+  border-radius: 3%;
+  color: var(--color-quinto);
 }
