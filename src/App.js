@@ -13,15 +13,15 @@ function App() {
     <div>
       <BrowserRouter>
         <Navbar />
-       <Routes>
+      <Routes>
         <Route path='/' element={<Home />} />
         <Route path='*' element={<Error />} />
         <Route path='/nosotros' element={<Nosotros />} />
         <Route path='/servicios' element={<Servicios />} />
         <Route path='/login' element={<Login />} />
         <Route path='/turnos' element={<Turnos />} />
-       </Routes>
-       <Footer />
+      </Routes>
+      <Footer />
       </BrowserRouter>
     </div>
   );
