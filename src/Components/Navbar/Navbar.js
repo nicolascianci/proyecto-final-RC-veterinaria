@@ -1,36 +1,29 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import img from '../assests/logo.png'
+import ButtonSession from '../ButtonSesion/ButtonSesion';
+import ButtonTurno from '../ButtonTurno/ButtonTurno';
+import img from '../assests/logo.png';
 
 const Navbar = () => {
   return (
-        <header class="sticky-top d-lg-flex flex-lg-column">
-            <nav class="navbar d-flex navbar-expand-lg justify-content-center bg-light">
-            <Link to="/">
-                <div class="navbar-logo ms-">
-                    <img className="img" src={img} alt="" />
-                    <a class="navbar-brand" href="/">LA HUELLITA</a>
+        <header class="navbar-style sticky-top d-lg-flex flex-lg-column">
+            <nav class="navbar navbar-expand-lg d-flex justify-content-between">
+                <div class="navbar-logo">
+                <Link class="navbar-brand text-light" to="/"><img className="img-navbar img" src={img} alt="" />
+                    LA HUELLITA</Link>
                 </div>
-                </Link>
-                <div class="navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav">
-                    <Link to="/nosotros">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/nosotros">Nosotros</a>
+                            <Link class="nav-link text-light" aria-current="page" to="/nosotros">Nosotros</Link>
                     </li>
-                    </Link>
-                    <Link to="/servicios">
                     <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/servicios">Servicios</a>
+                            <Link class="nav-link text-light" aria-current="page" to="/servicios">Servicios</Link>
                     </li>
-                    </Link>
                     </ul>
-                </div>
                 <div class="navbar-button p-2">
-                    <Link to="/login"><button class="button iniciar-sesion mx-1 rounded">Iniciar sesion</button></Link>
-                    <Link to="/turnos"><button class="button pedir-turno mx-1 rounded">Pedir turno</button></Link>
-                    
+                    <ButtonSession />
+                    <ButtonTurno />
                 </div>
             </nav>
         </header>
