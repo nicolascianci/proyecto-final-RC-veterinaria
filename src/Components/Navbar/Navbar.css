@@ -1,9 +1,20 @@
 .navbar{
-    background-color: #1DD3B0 !important;
+    background-color: #47126b !important;
+    height: 70px;
 }
 
-.img{
+.navbar-button{
+    width: 45%;
+}
+
+.img-navbar{
     width: 100px;
     height: 100px;
 }
 
+@media (max-width: 767.98px){
+   
+  }
+  
+  @media (min-width: 768px) and (max-width: 991.98px){
+  }
