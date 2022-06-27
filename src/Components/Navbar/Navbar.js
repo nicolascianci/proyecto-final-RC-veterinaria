@@ -21,7 +21,7 @@ const Navbar = () => {
                             <Link class="nav-link text-light" aria-current="page" to="/servicios">Servicios</Link>
                     </li>
                     </ul>
-                <div class="navbar-button p-2">
+                <div class="navbar-button p-0">
                     <ButtonSession />
                     <ButtonTurno />
                 </div>
