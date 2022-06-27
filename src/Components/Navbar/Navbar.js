@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import img from '../assests/logo.png'
 
 const Navbar = () => {
   return (
@@ -8,6 +9,7 @@ const Navbar = () => {
             <nav class="navbar d-flex navbar-expand-lg justify-content-center bg-light">
             <Link to="/">
                 <div class="navbar-logo ms-">
+                    <img className="img" src={img} alt="" />
                     <a class="navbar-brand" href="/">LA HUELLITA</a>
                 </div>
                 </Link>
