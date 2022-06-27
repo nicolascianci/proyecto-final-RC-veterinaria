@@ -1,6 +1,12 @@
 .card-a-pages{
-  text-shadow: 0px 2px 16px #000000;
+  text-shadow: 0px 2px 16px #000000;  
 }
+
+.card-a-pages :hover{
+  transition-duration:  .5s;
+  filter: saturate(180%);
+}
+
 
 @media (max-width: 767.98px){
   .card-a-pages{

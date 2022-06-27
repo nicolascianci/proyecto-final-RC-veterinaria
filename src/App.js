@@ -8,6 +8,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
 import Login from './Pages/Login';
 import Turnos from './Pages/Turnos';
+import Galeria from './Pages/Galeria';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/servicios' element={<Servicios />} />
         <Route path='/login' element={<Login />} />
         <Route path='/turnos' element={<Turnos />} />
+        <Route path='/galeria' element={<Galeria />} />
        </Routes>
        <Footer />
       </BrowserRouter>

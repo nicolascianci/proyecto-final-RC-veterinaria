@@ -4,7 +4,7 @@ import './Nosotros.css';
 
 const Nosotros = () => {
   return (
-    <section class="section-nosotros m-0 bg-light">
+    <section class="section-nosotros m-0">
   <div class="texto-nosotros align-items-center text-center">
   <div class="py-4 px-4">
   <h5 className="m-1">Veterinaria Huellitas es un <strong>centro especializado en la atención integral</strong> de tu mascota. Ofrecemos a nuestros clientes una completa atención para los animales, ya sean perros, gatos o especies exóticas, un servicio higiénico-sanitario completo, asesoramiento nutricional, análisis de laboratorio, peluquería, guardería, entre otros.</h5><hr />
