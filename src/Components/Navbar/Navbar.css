@@ -1,6 +1,6 @@
 .navbar{
     background-color: #47126b !important;
-    height: 70px;
+    height: 80px;
 }
 
 .navbar-button{
@@ -11,6 +11,9 @@
     width: 100px;
     height: 100px;
 }
+ .button-sesion{
+    margin: 0px;
+ }
 
 @media (max-width: 767.98px){
    .navbar-button{
