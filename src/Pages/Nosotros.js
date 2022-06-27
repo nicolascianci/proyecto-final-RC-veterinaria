@@ -4,12 +4,14 @@ import './Nosotros.css';
 
 const Nosotros = () => {
   return (
-    <section class="section-nosotros m-3 d-flex">
-  <div class="texto-nosotros row align-items-center text-center">
-  <div class="d-block py-4 px-4">
-  <h5 className="m-1">Veterinaria Huellitas es un <strong>centro especializado en la atención integral</strong> de tu mascota. Ofrecemos a nuestros clientes una completa atención para los animales, ya sean perros, gatos o especies exóticas, un servicio higiénico-sanitario completo, asesoramiento nutricional, análisis de laboratorio, peluquería, guardería, entre otros.</h5><br />
+    <section class="section-nosotros m-0 bg-light">
+  <div class="texto-nosotros align-items-center text-center">
+  <div class="py-4 px-4">
+  <h5 className="m-1">Veterinaria Huellitas es un <strong>centro especializado en la atención integral</strong> de tu mascota. Ofrecemos a nuestros clientes una completa atención para los animales, ya sean perros, gatos o especies exóticas, un servicio higiénico-sanitario completo, asesoramiento nutricional, análisis de laboratorio, peluquería, guardería, entre otros.</h5><hr />
+</div>
 
-    <h3>Valores</h3>
+<div className="">
+<h3>Valores</h3>
     <h5><strong>Profesionalidad</strong></h5>
     <p>Buscamos siempre el mejor procedimiento, adaptándonos a las circunstancias individuales de cada caso.</p>
     <h5><strong>Cercanía</strong></h5>
@@ -24,17 +26,7 @@ const Nosotros = () => {
     <Link to="/servicios" className="btn btn-info m-4"><strong>Click aquí</strong> para conocer todos nuestros servicios</Link>
   </div>
   </div>
-
-  <div class="fotografias d-block">
-  <div class="card-group">
-    <img src="https://images.pexels.com/photos/6234616/pexels-photo-6234616.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-50" alt="..." />
-    <img src="https://images.pexels.com/photos/6235664/pexels-photo-6235664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-50" alt="..." />
-    <img src="https://images.pexels.com/photos/6235241/pexels-photo-6235241.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-50" alt="..." />
-    <img src="https://images.pexels.com/photos/7469227/pexels-photo-7469227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-50" alt="..." />
-</div>
-</div>
-
-</section>
+  </section>
   );
 };
 
