@@ -4,7 +4,6 @@ import ButtonTurno from '../Components/ButtonTurno/ButtonTurno';import Cards fro
 import Carousel from '../Components/Carousel/Carousel';
 import Contacto from '../Components/Contacto/Contacto';
 import Pacientes from '../Components/Pacientes/Pacientes';
-import Login from './Login';
 
 const Home = () => {
   return (
@@ -15,7 +14,6 @@ const Home = () => {
       <Cards />
       <Pacientes />
       <Contacto />
-      <Login />
     </div>
   );
 };

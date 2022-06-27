@@ -1,26 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Cards.css';
+import buttonimg from '../assests/button-page-nosotros.jpg';
+import buttonimg2 from '../assests/button-page-servicios.jpg';
 
 const Cards = () => {
   return (
-    <div className="d-flex justify-content-around p-3 card-a-pages container">
-  <Link to="/nosotros" className="card-page card bg-dark text-white w-25 border border-0 rounded-0">
-  <img src="https://images.pexels.com/photos/6235114/pexels-photo-6235114.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="card-img" alt="..." />
+    <div className="d-flex p-0 card-a-pages">
+  <a href="/nosotros" className="card-page card bg-dark text-white col-6 border border-0 rounded-0">
+  <img src={buttonimg} className="card-img button-img" alt="..." />
   <div className="card-img-overlay d-flex align-items-center justify-content-center">
     <h3 className="card-title">Nosotros</h3>
   </div>
-</Link>
-<Link to="/servicios" className="card-page card bg-dark text-white w-25 border border-0 rounded-0">
-  <img src="https://images.pexels.com/photos/6235240/pexels-photo-6235240.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="card-img" alt="..." />
+</a>
+<a href="/servicios" className="card-page card bg-dark text-white col-6 border border-0 rounded-0">
+  <img src={buttonimg2} className="card-img button-img" alt="..." />
   <div className="card-img-overlay d-flex align-items-center justify-content-center">
     <h3 className="card-title">Servicios</h3>
-  </div>
-</Link>
-<a href="/#" className="card-page card bg-dark text-white w-25 border border-0 rounded-0">
-  <img src="https://images.pexels.com/photos/6816858/pexels-photo-6816858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="card-img" alt="..." />
-  <div className="card-img-overlay d-flex align-items-center justify-content-center">
-    <h3 className="card-title">Galería</h3>
   </div>
 </a>
     </div>
