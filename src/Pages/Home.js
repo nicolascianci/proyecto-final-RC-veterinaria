@@ -3,7 +3,7 @@ import ButtonSesion from '../Components/ButtonSesion/ButtonSesion';
 import ButtonTurno from '../Components/ButtonTurno/ButtonTurno';import Cards from '../Components/Cards/Cards';
 import Carousel from '../Components/Carousel/Carousel';
 import Contacto from '../Components/Contacto/Contacto';
-import Pacientes from '../Components/Pacientes/Pacientes';
+// import Pacientes from '../Components/Pacientes/Pacientes';
 
 const Home = () => {
   return (
@@ -12,7 +12,7 @@ const Home = () => {
       <ButtonSesion />
       <ButtonTurno />
       <Cards />
-      <Pacientes />
+      {/* <Pacientes /> */}
       <Contacto />
     </div>
   );
