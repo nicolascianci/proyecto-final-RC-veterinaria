@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import ButtonSession from '../ButtonSesion/ButtonSesion';
-import ButtonTurno from '../ButtonTurno/ButtonTurno';
+import ButtonConsulta from '../ButtonConsulta/ButtonConsulta';
 import img from '../assests/logo.png';
 
 const Navbar = () => {
@@ -22,8 +22,8 @@ const Navbar = () => {
                     </li>
                     </ul>
                 <div class="navbar-button p-0">
+                    <ButtonConsulta />
                     <ButtonSession />
-                    <ButtonTurno />
                 </div>
             </nav>
         </header>

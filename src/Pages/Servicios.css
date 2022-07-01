@@ -1,3 +1,7 @@
+.btn-vermas{
+  background-color: #affc41;
+}
+
 @media (max-width: 767.98px){
   .modal-body{
     margin: 0px;
