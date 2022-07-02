@@ -1,4 +1,6 @@
 import { useForm } from "react-hook-form";
+import './Login.css';
+import logoLogin from '../Components/assests/logo.png'
 
 const Login = () => {
   const { register, handleSubmit } = useForm();
@@ -17,17 +19,25 @@ const Login = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <div className="formulario-login d-inline-flex">
+      <div className="col-6 d-flex align-items-center justify-content-end">
+        <img src={logoLogin} className="w-75" alt="" />
+        </div>
+
+        <div className="col-6 d-flex align-items-center justify-content-start">
+    <form className="w-75" onSubmit={handleSubmit(onSubmit)}>
       <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" {...register("email")}/>
+        <label for="exampleInputEmail1" className="text-light form-label fs-3">Email</label>
+        <input type="email" className="border-0 rounded-0 form-control fs-5 p-2" id="exampleInputEmail1" aria-describedby="emailHelp" {...register("email")}/>
       </div>
       <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" {...register("password")}/>
+        <label for="exampleInputPassword1" className="text-light form-label fs-3">Contraseña</label>
+        <input type="password" className="border-0 rounded-0 form-control fs-5 p-2" id="exampleInputPassword1" {...register("password")}/>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn border-0 rounded-0 btn-light">Ingresar</button>
     </form>
+    </div>
+    </div>
   );
 }
  

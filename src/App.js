@@ -7,7 +7,7 @@ import Servicios from './Pages/Servicios';
 import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
 import Login from './Pages/Login';
-import Turnos from './Pages/Turnos';
+import Consulta from './Pages/Consulta';
 import Galeria from './Pages/Galeria';
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
         <Route path='/nosotros' element={<Nosotros />} />
         <Route path='/servicios' element={<Servicios />} />
         <Route path='/login' element={<Login />} />
-        <Route path='/turnos' element={<Turnos />} />
+        <Route path='/consulta' element={<Consulta />} />
         <Route path='/galeria' element={<Galeria />} />
        </Routes>
        <Footer />
