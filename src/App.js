@@ -9,6 +9,7 @@ import Footer from './Components/Footer/Footer';
 import Login from './Pages/Login';
 import Consulta from './Pages/Consulta';
 import Galeria from './Pages/Galeria';
+import UsuarioRegistrado from './Pages/UsuarioRegistrado';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/consulta' element={<Consulta />} />
         <Route path='/galeria' element={<Galeria />} />
+        <Route path='/usuarioregistrado' element={<UsuarioRegistrado />} />
        </Routes>
        <Footer />
       </BrowserRouter>

@@ -28,13 +28,13 @@ const Login = () => {
     <form className="w-75" onSubmit={handleSubmit(onSubmit)}>
       <div class="mb-3">
         <label for="exampleInputEmail1" className="text-light form-label fs-3">Email</label>
-        <input type="email" className="border-0 rounded-0 form-control fs-5 p-2" id="exampleInputEmail1" aria-describedby="emailHelp" {...register("email")}/>
+        <input type="email" className="border-0 rounded-0 form-control fs-5 p-2" id="exampleInputEmail1" aria-describedby="emailHelp" {...register("email")} required/>
       </div>
       <div class="mb-3">
         <label for="exampleInputPassword1" className="text-light form-label fs-3">Contraseña</label>
-        <input type="password" className="border-0 rounded-0 form-control fs-5 p-2" id="exampleInputPassword1" {...register("password")}/>
+        <input type="password" className="border-0 rounded-0 form-control fs-5 p-2" id="exampleInputPassword1" {...register("password")} required/>
       </div>
-      <button type="submit" class="btn border-0 rounded-0 btn-light">Ingresar</button>
+      <button type="submit" class="btn-login btn border-0 rounded-0">Ingresar</button>
     </form>
     </div>
     </div>
