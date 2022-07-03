@@ -3,6 +3,10 @@
   height: 80vh;
 }
 
+.btn-consultas{
+  background-color: #1dd3b0;
+}
+
 .foto-texto-card{
   text-shadow: 0px 2px 16px #000000;
 }
