@@ -21,10 +21,10 @@ const Login = () => {
   return (
     <div className="formulario-login d-inline-flex">
       <div className="col-6 d-flex align-items-center justify-content-end">
-        <img src={logoLogin} className="w-75" alt="" />
+        <img src={logoLogin} className="logo-login w-75" alt="" />
         </div>
 
-        <div className="col-6 d-flex align-items-center justify-content-start">
+        <div className="form-login col-6 d-flex align-items-center justify-content-start">
     <form className="w-75" onSubmit={handleSubmit(onSubmit)}>
       <div class="mb-3">
         <label for="exampleInputEmail1" className="text-light form-label fs-3">Email</label>
