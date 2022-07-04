@@ -1,16 +1,18 @@
-.contacto-inicio{
+.ubicacion{
   background-color: #47126b;
 }
 
-.list-group{
-  background-color: #47126b !important;
-}
 
 @media (max-width: 767.98px) {
-  .contacto-section{
+  .ubicacion{
     flex-wrap: wrap !important;
+    text-align: center;
+  }
+  .texto-ubicacion{
+    padding-left: 0px !important;
   }
   .mapa{
+    height: 200px;
     margin: 10px;
  }
 }
