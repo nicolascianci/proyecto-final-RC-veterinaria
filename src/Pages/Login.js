@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import './Login.css';
-import logoLogin from '../Components/assests/logo.png'
+import logoLogin from '../Components/assests/images/logo.png'
 
 const Login = () => {
   const { register, handleSubmit } = useForm();

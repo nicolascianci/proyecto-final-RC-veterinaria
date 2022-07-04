@@ -1,11 +1,11 @@
 import React from 'react';
-import img from '../assests/logo.png'
+import img from '../assests/images/logo.png'
 import './Footer.css'
 const Footer = () => {
   return (    
-    <div className='footer d-flex aling-items-center justify-content-center'>
+    <div className='footer d-flex justify-content-center'>
       <img className="img m-0" src={img} alt="" />
-      <h6 className=" text-center py-5">Todos los derechos reservados a Veterinaria Huellitas | 2022</h6>
+      <h6 className=" text-center d-flex align-items-center">Todos los derechos reservados a Veterinaria Huellitas | 2022</h6>
     </div>    
   );
 };

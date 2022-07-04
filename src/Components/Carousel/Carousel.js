@@ -1,10 +1,10 @@
 import React from "react";
 import "./carousel.css";
-import image2 from "../assests/Vet2.jpg";
-import image3 from "../assests/Vet3.jpg";
-import image4 from "../assests/Vet4.jpg";
-import image5 from "../assests/Vet5.jpg";
-import logo from "../assests/logo.png";
+import image2 from "../assests/images/Vet2.jpg";
+import image3 from "../assests/images/Vet3.jpg";
+import image4 from "../assests/images/Vet4.jpg";
+import image5 from "../assests/images/Vet5.jpg";
+import logo from "../assests/images/logo.png";
 
 const Carousel = () => {
   return (
