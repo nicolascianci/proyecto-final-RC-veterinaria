@@ -1,0 +1,12 @@
+.errorpage{
+  background-image: url(https://images.pexels.com/photos/7726225/pexels-photo-7726225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85vh;
+  background-position: center;
+  flex-direction: column;
+}
+
+.btn-error{
+  background-color: #affc41;
+}
