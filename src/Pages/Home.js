@@ -2,7 +2,7 @@ import React from 'react';
 import ButtonSesion from '../Components/ButtonSesion/ButtonSesion';
 import ButtonConsulta from '../Components/ButtonConsulta/ButtonConsulta';import Cards from '../Components/Cards/Cards';
 import Carousel from '../Components/Carousel/Carousel';
-import Contacto from '../Components/Contacto/Contacto';
+import Ubicacion from '../Components/Ubicacion/Ubicacion';
 
 const Home = () => {
   return (
@@ -11,7 +11,7 @@ const Home = () => {
       <ButtonConsulta />
       <ButtonSesion />
       <Cards />
-      <Contacto />
+      <Ubicacion />
     </div>
   );
 };
