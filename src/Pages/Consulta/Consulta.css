@@ -1,7 +1,7 @@
-/* .contacto-section{
+.contacto{
   background-color: #47126b;
   height: 80vh;
-} */
+}
 
 .btn-consultas{
   background-color: #1dd3b0;
@@ -12,10 +12,30 @@
 }
 
 @media (max-width: 767.98px) {
-  .contacto-section{
-    flex-wrap: wrap !important;
+  .contacto{
+    flex-wrap: wrap;
+    height: 85vh;
+    padding: 10px 30px !important;
   }
-  .mapa{
-    margin: 10px;
- }
+  .text-consulta{
+    font-size: 16px;
+  }
+  .foto-texto-card{
+    width: 100%;
+  }
+  .formulario-consultas{
+    width: 100%;
+    padding: 10px 20px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+  .contacto{
+    flex-wrap: wrap;
+    height: 90vh;
+  }
+  
+  .text-consulta{
+    font-size: 28px;
+  }
 }
