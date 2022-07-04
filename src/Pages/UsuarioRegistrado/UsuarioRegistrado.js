@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Pages/UsuarioRegistrado.css'
+import './UsuarioRegistrado.css'
 
 const UsuarioRegistrado = () => {
   return (

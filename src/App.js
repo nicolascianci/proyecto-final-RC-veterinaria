@@ -1,15 +1,14 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './Pages/Home';
-import Error from './Pages/Error';
-import Nosotros from './Pages/Nosotros';
-import Servicios from './Pages/Servicios';
+import Home from './Pages/Home/Home';
+import Error from './Pages/Error/Error';
+import Nosotros from './Pages/Nosotros/Nosotros';
+import Servicios from './Pages/Servicios/Servicios';
 import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
-import Login from './Pages/Login';
-import Consulta from './Pages/Consulta';
-import Galeria from './Pages/Galeria';
-import UsuarioRegistrado from './Pages/UsuarioRegistrado';
+import Login from './Pages/Login/Login';
+import Consulta from './Pages/Consulta/Consulta';
+import UsuarioRegistrado from './Pages/UsuarioRegistrado/UsuarioRegistrado';
 
 function App() {
   return (
@@ -23,7 +22,6 @@ function App() {
         <Route path='/servicios' element={<Servicios />} />
         <Route path='/login' element={<Login />} />
         <Route path='/consulta' element={<Consulta />} />
-        <Route path='/galeria' element={<Galeria />} />
         <Route path='/usuarioregistrado' element={<UsuarioRegistrado />} />
        </Routes>
        <Footer />
