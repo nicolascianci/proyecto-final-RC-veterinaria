@@ -21,14 +21,14 @@ const Consulta = () => {
   }
   return (
     <div className="contacto d-flex justify-content-between align-items-center p-5">
-      <div className="foto-texto-card card bg-dark text-white col-6 col-sm-12 border-0 rounded-0">
+      <div className="foto-texto-card card text-white w-50 border-0 rounded-0">
   <img src={imageConsulta} className="card-img rounded-0 " alt="consulta-veterinaria" />
   <div className="card-img-overlay d-flex align-items-center">
   <h5 className="text-consulta m-5 text-center">En La Huellita Veterinaria <strong>queremos acompañar a tu mascota en todo momento</strong>. Podés enviarnos tu consulta por aquí y nuestros veterinarios van a contactarte a la brevedad aclarando todas tus dudas.</h5>
 </div>
 </div>
 
-      <div className="formulario-consultas col-6 col-sm-12 p-5">
+      <div className="formulario-consultas w-50 p-3">
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="mb-2">
           <label for="exampleInputEmail1" className="fs-5 form-label text-white mb-0">Email</label>
