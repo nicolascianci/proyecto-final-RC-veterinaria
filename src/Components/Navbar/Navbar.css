@@ -1,34 +1,31 @@
+.logo-navbar{
+    width: 120px;
+}
+
+.botones-navbar{
+    width: 500px;
+}
+
 .navbar{
     background-color: #47126b !important;
     height: 80px;
 }
 
-.navbar-button{
-    width: 45%;
-}
-
-.img-navbar{
-    width: 100px;
-    height: 100px;
-}
- .button-sesion{
-    margin: 0px;
- }
-
 @media (max-width: 767.98px){
-   .navbar-button{
-    display: none;
-   }
-   .img-navbar{
-    display: none;
-   }
-   .navbar{
-    height: 100px;
-   }
-  }
-  
+    .navbar{
+        height: auto;
+    }
+    .botones-navbar{
+        width: 80%;
+        padding-bottom: 9px;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 991.98px){
     .navbar{
-        height: 11vh;
-  }
+        height: auto;
+    }
+    .botones-navbar{
+        padding-bottom: 10px;
+    }
 }
