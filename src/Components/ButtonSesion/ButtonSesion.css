@@ -4,3 +4,9 @@
     border-color: #AFFC41;
     text-shadow: 0px 2px 16px #000000;
 }
+
+@media (max-width: 767.98px){
+    .boton-sesion{
+        padding: 5px;
+    }
+}
