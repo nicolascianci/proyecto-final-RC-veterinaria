@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import img from '../assests/logo.png';
+import img from '../assests/images/logo.png';
 import ButtonConsulta from "../ButtonConsulta/ButtonConsulta";
 import ButtonSesion from "../ButtonSesion/ButtonSesion";
 

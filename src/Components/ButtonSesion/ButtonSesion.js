@@ -1,6 +1,6 @@
 import React from 'react';
 import './ButtonSesion.css';
-import img from '../assests/caminando-con-perro.png';
+import img from '../assests/images/caminando-con-perro.png';
 import { Link } from 'react-router-dom';
 
 const ButtonSesion = () => {

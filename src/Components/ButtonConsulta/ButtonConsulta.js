@@ -1,6 +1,6 @@
 import React from 'react';
 import './ButtonConsulta.css';
-import img from '../assests/mascota.png';
+import img from '../assests/images/mascota.png';
 import { Link } from 'react-router-dom';
 
 const ButtonConsulta = () => {

@@ -1,8 +1,8 @@
 import React from 'react';
 import './Cards.css';
-import buttonimg from '../assests/button-page-nosotros.jpg';
-import buttonimg2 from '../assests/button-page-servicios.jpg';
-import buttonimg3 from '../assests/button-page-galeria.jpg';
+import buttonimg from '../assests/images/button-page-nosotros.jpg';
+import buttonimg2 from '../assests/images/button-page-servicios.jpg';
+import buttonimg3 from '../assests/images/button-page-galeria.jpg';
 import { Link } from 'react-router-dom';
 
 const Cards = () => {
