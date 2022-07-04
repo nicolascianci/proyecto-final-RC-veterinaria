@@ -1,6 +1,7 @@
 import React from 'react';
 import './Consulta.css';
 import { useForm } from "react-hook-form";
+import imageConsulta from '../assests/images/image-consulta.jpg'
 
 const Consulta = () => {
   const { register, handleSubmit } = useForm();
@@ -19,32 +20,32 @@ const Consulta = () => {
     console.log(json)
   }
   return (
-    <section className="contacto-section d-inline-flex justify-content-evenly align-items-center p-5">
-      <div className="foto-texto-card card bg-dark text-white col-6 border-0 rounded-0">
-  <img src="https://images.pexels.com/photos/7195118/pexels-photo-7195118.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="card-img rounded-0 " alt="..." />
+    <div className="contacto d-flex justify-content-between align-items-center p-5">
+      <div className="foto-texto-card card bg-dark text-white col-6 col-sm-12 border-0 rounded-0">
+  <img src={imageConsulta} className="card-img rounded-0 " alt="consulta-veterinaria" />
   <div className="card-img-overlay d-flex align-items-center">
-  <h5 className="m-5 text-center">Veterinaria Huellitas es un <strong>centro especializado en la atención integral</strong> de tu mascota. Ofrecemos a nuestros clientes una completa atención para los animales, ya sean perros, gatos o especies exóticas, un servicio higiénico-sanitario completo, asesoramiento nutricional, análisis de laboratorio, peluquería, guardería, entre otros.</h5>
+  <h5 className="text-consulta m-5 text-center">En La Huellita Veterinaria <strong>queremos acompañar a tu mascota en todo momento</strong>. Podés enviarnos tu consulta por aquí y nuestros veterinarios van a contactarte a la brevedad aclarando todas tus dudas.</h5>
 </div>
 </div>
 
-      <div className="col-6 p-5">
+      <div className="formulario-consultas col-6 col-sm-12 p-5">
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="mb-2">
           <label for="exampleInputEmail1" className="fs-5 form-label text-white mb-0">Email</label>
-          <input type="email" className="fs-5 form-control rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" {...register("email")}/>
+          <input type="email" className="fs-5 form-control rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" {...register("email")} required/>
         </div>
         <div className="mb-2">
           <label for="exampleInputMotivo" className="fs-5 form-label text-white mb-0">Motivo</label>
-          <input type="text" className="fs-5 form-control rounded-0" id="exampleInputPassword1" aria-describedby="motivoHelp" {...register("motivo")}/>
+          <input type="text" className="fs-5 form-control rounded-0" id="exampleInputPassword1" aria-describedby="motivoHelp" {...register("motivo")} required/>
         </div>
         <div className="mb-2">
           <label for="exampleInputDescripcion" className="fs-5 form-label text-white mb-0">Descripcion</label>
-          <textarea className="form-control rounded-0" id="exampleInputPassword1" aria-describedby="descripcionHelp"{...register("descripcion")} cols="20" rows="3"></textarea>
+          <textarea className="form-control rounded-0" id="exampleInputPassword1" aria-describedby="descripcionHelp"{...register("descripcion")} cols="20" rows="3" required></textarea>
         </div>
         <button type="submit" className="btn-consultas btn rounded-0 border-0 px-5">Enviar</button>
       </form>          
       </div>
-    </section>
+    </div>
   );
 };
 
