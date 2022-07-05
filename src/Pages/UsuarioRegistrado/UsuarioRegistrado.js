@@ -1,7 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useEffect } from 'react';
 import './UsuarioRegistrado.css'
 
+
 const UsuarioRegistrado = () => {
+  const [consultas, setConsultas] = useState([])
+  const getData = async() => {
+    const data = await fetch('http://localhost:8000/consultas')
+    const json = await data.json()    
+    setConsultas(json.consultas)
+  }
+
+  const deleteConsulta = async(id) => { 
+    console.log(id)   
+    const resp = await fetch('http://localhost:8000/consultas', {
+      method: 'DELETE',
+      body: JSON.stringify(id),
+      headers: 
+      {
+        "Content-Type": "application/json"
+      }      
+    } )  
+
+    console.log(resp)
+  }    
+
+  useEffect(() => {
+    getData()
+  }, [])
+  
   return (
     <div className="consultas-veterinario">
       <h2 className="text-center pt-3">¡Bienvenido, Doc!🐾👋</h2>
@@ -10,27 +37,28 @@ const UsuarioRegistrado = () => {
       <table class="table">
   <thead>
     <tr>
+      <th scope="col">ID</th>
       <th scope="col">Email</th>
       <th scope="col">Motivo</th>
       <th scope="col">Descripción</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>prueba1@prueba.com</td>
-      <td>Consulta general</td>
-      <td>Mi perro caniche tiene manchas en la piel</td>
-    </tr>
-    <tr>
-      <td>prueba2@prueba.com</td>
-      <td>Precios de cirugías</td>
-      <td>Necesito castrar a mi gato y quisiera precios</td>
-    </tr>
-    <tr>
-      <td>prueba3@prueba.com</td>
-      <td>Servicio de peluquería</td>
-      <td>¿Hacen peluquería a domicilio? Mi perro es grande y no quiere subir a ningún auto</td>
-    </tr>
+    {
+      consultas.map(consulta => (
+        <tr>
+          <td>{consulta._id}</td>
+          <td>{consulta.email}</td>
+          <td>{consulta.motivo}</td>
+          <td>{consulta.descripcion}</td>
+          <td>
+            <button onClick={() => deleteConsulta(consulta._id)}>
+              Eliminar
+            </button>
+            </td>
+        </tr> 
+      ))
+    }    
   </tbody>
 </table>
   </div>
