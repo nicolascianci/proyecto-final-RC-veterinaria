@@ -7,7 +7,6 @@ const Consulta = () => {
   const { register, handleSubmit } = useForm();
 
   const onSubmit = async(data) => {
-    console.log(data)
     const resp = await fetch('http://localhost:8000/consultas', {
       method: 'POST',
       body: JSON.stringify(data),
@@ -15,9 +14,7 @@ const Consulta = () => {
         "Content-Type": "application/json"
       }
     })
-    const json = await resp.json()
-
-    console.log(json)
+   
   }
   return (
     <div className="contacto d-flex justify-content-between align-items-center p-5">

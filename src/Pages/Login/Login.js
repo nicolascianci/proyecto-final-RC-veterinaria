@@ -17,7 +17,6 @@ const Login = () => {
     })
     const json = await resp.json()
     navigate("/usuarioregistrado", { replace: true });
-    console.log(json)
   }
 
   

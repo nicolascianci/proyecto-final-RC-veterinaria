@@ -12,7 +12,6 @@ const UsuarioRegistrado = () => {
   }
 
   const deleteConsulta = async(id) => { 
-    console.log(id)   
     const resp = await fetch('http://localhost:8000/consultas', {
       method: 'DELETE',
       body: JSON.stringify(id),
@@ -22,7 +21,6 @@ const UsuarioRegistrado = () => {
       }      
     } )  
 
-    console.log(resp)
   }    
 
   useEffect(() => {
