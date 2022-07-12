@@ -29,7 +29,7 @@ const UsuarioRegistrado = () => {
   
   return (
     <div className="consultas-veterinario">
-      <h2 className="text-center pt-3">¡Bienvenido Doc!🐾👋</h2>
+      <h2 className="text-center pt-3">¡Bienvenido, Doc!🐾👋</h2>
       <h4 className="text-center">Estas son todas las consultas del día:</h4>
       <div className="px-5 py-2">
       <table class="table">
