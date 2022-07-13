@@ -23,7 +23,7 @@ const Cards = () => {
 <Link to="/galeria" className="card-page card bg-dark text-white col-4 border border-0 rounded-0">
   <img src={buttonimg3} className="card-img button-img rounded-0" alt="..." />
   <div className="card-img-overlay d-flex align-items-center justify-content-center">
-    <h3 className="card-title">Galería</h3>
+    <h3 className="card-title">Galeria</h3>
   </div>
 </Link>
 
