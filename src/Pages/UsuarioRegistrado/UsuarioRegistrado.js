@@ -31,7 +31,6 @@ const UsuarioRegistrado = () => {
       }      
     } )  
 
-    console.log(resp)
   }    
 
   useEffect(() => {
