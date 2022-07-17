@@ -1,7 +1,8 @@
 import React from 'react';
 import './Consulta.css';
 import { useForm } from "react-hook-form";
-import imageConsulta from '../assests/images/image-consulta.jpg'
+import imageConsulta from '../assests/images/image-consulta.jpg';
+import { Link } from 'react-router-dom';
 
 const Consulta = () => {
   const { register, handleSubmit } = useForm();
@@ -39,9 +40,24 @@ const Consulta = () => {
           <label for="exampleInputDescripcion" className="fs-5 form-label text-white mb-0">Descripcion</label>
           <textarea className="form-control rounded-0" id="exampleInputPassword1" aria-describedby="descripcionHelp"{...register("descripcion")} cols="20" rows="3" maxLength="500" required></textarea>
         </div>
-        <button type="submit" className="btn-consultas btn rounded-0 border-0 px-5">Enviar</button>
+        <button type="submit" className="btn-consultas btn rounded-0 border-0 px-5" data-bs-toggle="modal" data-bs-target="#exampleModal" >Enviar</button>
       </form>          
       </div>
+
+      <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div className="modal-dialog">
+    <div className="modal-content p-3 border-0 rounded-0">
+      <h4 className="modal-body text-center">
+      <strong>¡Tu mensaje fue enviado!</strong> <br /> Nos contactaremos con vos a la brevedad!
+      </h4>
+      <div className="modal-footer d-flex justify-content-center">
+        <Link to="/">
+        <button type="button" className="btn btn-warning border-0 rounded-0 p-3 mb-0">Volver a la página principal</button></Link>
+      </div>
+    </div>
+  </div>
+</div>
+
     </div>
   );
 };
