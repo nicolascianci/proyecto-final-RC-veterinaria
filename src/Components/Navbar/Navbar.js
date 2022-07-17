@@ -13,7 +13,7 @@ const Navbar = () => {
     <img src={img} className="logo-navbar" alt="logo" />
     </Link>
     <Link className="navbar-brand text-light fs-4 pe-5" to="/">La Huellita</Link>
-    <button className="navbar-toggler me-3 btn-outline-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button className="navbar-toggler me-3 btn-outline-light bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
