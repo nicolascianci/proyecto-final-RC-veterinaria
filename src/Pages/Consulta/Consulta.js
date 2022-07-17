@@ -29,15 +29,15 @@ const Consulta = () => {
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="mb-2">
           <label for="exampleInputEmail1" className="fs-5 form-label text-white mb-0">Email</label>
-          <input type="email" className="fs-5 form-control rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" {...register("email")} required/>
+          <input type="email" className="fs-5 form-control rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" {...register("email")} maxLength="40" required/>
         </div>
         <div className="mb-2">
           <label for="exampleInputMotivo" className="fs-5 form-label text-white mb-0">Motivo</label>
-          <input type="text" className="fs-5 form-control rounded-0" id="exampleInputPassword1" aria-describedby="motivoHelp" {...register("motivo")} required/>
+          <input type="text" className="fs-5 form-control rounded-0" id="exampleInputPassword1" aria-describedby="motivoHelp" {...register("motivo")} maxLength="40" required/>
         </div>
         <div className="mb-2">
           <label for="exampleInputDescripcion" className="fs-5 form-label text-white mb-0">Descripcion</label>
-          <textarea className="form-control rounded-0" id="exampleInputPassword1" aria-describedby="descripcionHelp"{...register("descripcion")} cols="20" rows="3" required></textarea>
+          <textarea className="form-control rounded-0" id="exampleInputPassword1" aria-describedby="descripcionHelp"{...register("descripcion")} cols="20" rows="3" maxLength="500" required></textarea>
         </div>
         <button type="submit" className="btn-consultas btn rounded-0 border-0 px-5">Enviar</button>
       </form>          
