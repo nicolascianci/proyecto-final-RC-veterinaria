@@ -12,6 +12,11 @@ const devolverEstado = (Estado) =>{
   }
 }
 
+const refrescar = () =>{
+  window.location.reload()
+  
+}
+
 const UsuarioRegistrado = () => {
   const [consultas, setConsultas] = useState([])
   const getData = async() => {
@@ -44,7 +49,7 @@ const UsuarioRegistrado = () => {
       <h4 className="text-center">Estas son todas las consultas del día:</h4>
       <div className="px-5 py-2">
       <div class="table-responsive">
-        <table class="table">
+        <table class="table" id='tabla'>
             <thead>
               <tr>               
                 {/* <th className='size' scope="col" >ID</th>   */}
@@ -57,26 +62,43 @@ const UsuarioRegistrado = () => {
             <tbody>
               {                
                 consultas.map(consulta =>(
-                  <tr>                    
+                  <tr id={devolverEstado(consulta.resuelta)}>                    
                     {/* <td className='size'>{consulta._id}</td>                     */}
                     <td>{consulta.email}</td>
                     <td>{consulta.motivo}</td>
                     <td>{consulta.descripcion}</td>
                     <td>{devolverEstado(consulta.resuelta)}</td>                     
-                      {consulta.resuelta === false?<td>
-                                                      <button className='btn btn-success' onClick={() => ResponderConsulta(consulta)}>
-                                                      Responder
-                                                      </button>
-                                                    </td> : <p></p>}                     
+                      {consulta.resuelta === false?
+                      <td>
+                          <button className='btn btn-success' onClick={() => ResponderConsulta(consulta)} data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          Responder                                                                                 
+                          </button>
+                          </td> : <p></p>}                     
                   </tr> 
                 ))
               }    
             </tbody>
         </table>
       </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Consulta Realizada</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              La consulta fue resuelta exitosamente
+            </div>
+            <div class="modal-footer">              
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerra</button>              
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  );
+      </div>
+    </div>       
+  );  
 };
 
 export default UsuarioRegistrado;
