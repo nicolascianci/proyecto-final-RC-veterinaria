@@ -14,7 +14,6 @@ const devolverEstado = (Estado) =>{
 
 const refrescar = () =>{
   window.location.reload()
-  
 }
 
 const UsuarioRegistrado = () => {
@@ -64,7 +63,7 @@ const UsuarioRegistrado = () => {
                 consultas.map(consulta =>(
                   <tr id={devolverEstado(consulta.resuelta)}>                    
                     {/* <td className='size'>{consulta._id}</td>                     */}
-                    <td>{consulta.email}</td>
+                    <td><a href={`mailto:${consulta.email}`}>{consulta.email}</a></td>
                     <td>{consulta.motivo}</td>
                     <td>{consulta.descripcion}</td>
                     <td>{devolverEstado(consulta.resuelta)}</td>                     
@@ -80,7 +79,7 @@ const UsuarioRegistrado = () => {
             </tbody>
         </table>
       </div>
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">

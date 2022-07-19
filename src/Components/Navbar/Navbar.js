@@ -6,6 +6,8 @@ import ButtonConsulta from "../ButtonConsulta/ButtonConsulta";
 import ButtonSesion from "../ButtonSesion/ButtonSesion";
 
 const Navbar = () => {
+  const token = localStorage.getItem('token')
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light p-0">
   <div className="container-fluid px-0">
@@ -24,7 +26,9 @@ const Navbar = () => {
       <div className="d-flex justify-content-center">
         <div className="botones-navbar">
       <ButtonConsulta />
-      <ButtonSesion />
+      {
+        !token && <ButtonSesion />
+      }
       </div>
       </div>
     </div>
