@@ -12,10 +12,20 @@ const Consulta = () => {
       body: JSON.stringify(data),
       headers: {
         "Content-Type": "application/json"
-      }
+      }    
     })
    
   }
+
+//   const validarEmail = () => {
+//     const regexEmail = new RegExp(/^[^@]+@[^@]+\.[a-zA-Z]{2,}$/);
+//     if (regexEmail === true ) {
+//       alert('Ingresá un email válido')
+//     }
+// }
+;
+
+
   return (
     <div className="contacto d-flex justify-content-between align-items-center p-5">
       <div className="foto-texto-card card text-white w-50 border-0 rounded-0">
@@ -29,15 +39,15 @@ const Consulta = () => {
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="mb-2">
           <label for="exampleInputEmail1" className="fs-5 form-label text-white mb-0">Email</label>
-          <input type="email" className="fs-5 form-control rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" {...register("email")} maxLength="40" required/>
+          <input type="email" className="fs-5 form-control rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" {...register("email")} maxLength="40" pattern='^[^@]+@[^@]+\.[a-zA-Z]{2,}$' placeholder='nombre@email.com' required/>
         </div>
         <div className="mb-2">
           <label for="exampleInputMotivo" className="fs-5 form-label text-white mb-0">Motivo</label>
-          <input type="text" className="fs-5 form-control rounded-0" id="exampleInputPassword1" aria-describedby="motivoHelp" {...register("motivo")} maxLength="40" required/>
+          <input type="text" className="fs-5 form-control rounded-0" id="exampleInputPassword1" aria-describedby="motivoHelp" {...register("motivo")} maxLength="40" placeholder="Consulta clínica/Servicios/Costos etc." required/>
         </div>
         <div className="mb-2">
           <label for="exampleInputDescripcion" className="fs-5 form-label text-white mb-0">Descripcion</label>
-          <textarea className="form-control rounded-0" id="exampleInputPassword1" aria-describedby="descripcionHelp"{...register("descripcion")} cols="20" rows="3" maxLength="500" required></textarea>
+          <textarea className="form-control rounded-0" id="exampleInputPassword1" aria-describedby="descripcionHelp"{...register("descripcion")} cols="20" rows="3" maxLength="500" placeholder="Sé puntual y conciso" required></textarea>
         </div>
         <button type="submit" className="btn-consultas btn rounded-0 border-0 px-5" data-bs-toggle="modal" data-bs-target="#exampleModal" >Enviar</button>
       </form>          

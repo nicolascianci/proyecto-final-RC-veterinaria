@@ -24,7 +24,7 @@ const UsuarioRegistrado = () => {
     setConsultas(json.consultas)
   }
 
-  const ResponderConsulta = async(id) => { 
+  const responderConsulta = async(id) => { 
     console.log(id)   
     const resp = await fetch('http://localhost:8000/consultas/actualizar', {
       method: 'PUT',
@@ -32,10 +32,10 @@ const UsuarioRegistrado = () => {
       headers: 
       {
         "Content-Type": "application/json"
-      }      
-    } )  
+      }
+    })  
 
-  }    
+  }
 
   useEffect(() => {
     getData()
@@ -67,9 +67,9 @@ const UsuarioRegistrado = () => {
                     <td>{devolverEstado(consulta.resuelta)}</td>                     
                       {consulta.resuelta === false?
                       <td>
-                          <button className='btn btn-success'  onClick={() => ResponderConsulta(consulta)
-                          } data-bs-toggle="modal" data-bs-target="#exampleModal">
-                          Responder                                                                                 
+                          <button className='btn btn-warning border-0 rounded-0' onClick={() => {responderConsulta(consulta); refrescar()
+                          }} >
+                          Respondida
                           </button>
                           </td> : <p></p>}                     
                   </tr> 
@@ -78,24 +78,24 @@ const UsuarioRegistrado = () => {
             </tbody>
         </table>
       </div>
-      <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      {/* <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-header">
-              <h5 className="modal-title" id="exampleModalLabel">Consulta Realizada</h5>
+              <h5 className="modal-title" id="exampleModalLabel">Consulta respondida</h5>
               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" onClick={() => {refrescar()}}></button>
-            </div>
-            <div className="modal-body">
+            </div> */}
+            {/* <div className="modal-body">
               La consulta fue resuelta exitosamente
-            </div>
-            <div className="modal-footer">              
-              <button type="button" className="btn btn-secondary" data-bs-dismiss="modal" onClick={() => {refrescar()}}>Cerrar</button>              
-            </div>
+            </div> */}
+            {/* <div className="modal-footer">              
+              <button type="button" className="btn btn-secondary" data-bs-dismiss="modal" onClick={() => {refrescar()}}>Actualizar</button>              
+            </div> */}
           </div>
         </div>
-      </div>
-      </div>
-    </div>       
+    //   </div>
+    //   </div>
+    // </div>       
   );  
 };
 
