@@ -46,7 +46,7 @@ const UsuarioRegistrado = () => {
     <div className="consultas-veterinario">
       <h2 className="text-center pt-3">¡Bienvenido, Doc!🐾👋</h2>
       <h4 className="text-center">Estas son todas las consultas del día:</h4>
-      <div className="px-5 py-2">
+      <div className="px-5 py-2 w-100">
       <div className="table-responsive">
         <table className="table" id='tabla'>
             <thead>
@@ -62,9 +62,9 @@ const UsuarioRegistrado = () => {
                 consultas.map(consulta =>(
                   <tr id={devolverEstado(consulta.resuelta)}>                    
                     <td><a href={`mailto:${consulta.email}`}>{consulta.email}</a></td>
-                    <td>{consulta.motivo}</td>
-                    <td>{consulta.descripcion}</td>
-                    <td>{devolverEstado(consulta.resuelta)}</td>                     
+                    <td className="fw-bold text-break text-uppercase">{consulta.motivo}</td>
+                    <td className="text-break fst-italic">{consulta.descripcion}</td>
+                    <td className="text-uppercase fw-bold">{devolverEstado(consulta.resuelta)}</td>                     
                       {consulta.resuelta === false?
                       <td>
                           <button className='btn btn-warning border-0 rounded-0' onClick={() => {responderConsulta(consulta); refrescar()
