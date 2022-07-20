@@ -17,6 +17,10 @@ const Consulta = () => {
    
   }
 
+  const resetearForm = () => {
+    document.getElementById("formconsulta").reset()
+  }
+
 
   return (
     <div className="contacto d-flex justify-content-between align-items-center p-5">
@@ -28,7 +32,7 @@ const Consulta = () => {
 </div>
 
       <div className="formulario-consultas w-50 p-3">
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form onSubmit={handleSubmit(onSubmit)} id="formconsulta">
         <div className="mb-2">
           <label for="exampleInputEmail1" className="fs-5 form-label text-white mb-0">Email</label>
           <input type="email" className="fs-5 form-control rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" {...register("email")} maxLength="35" pattern='^[^@]+@[^@]+\.[a-zA-Z]{2,}$' placeholder='nombre@email.com' required/>
@@ -41,7 +45,7 @@ const Consulta = () => {
           <label for="exampleInputDescripcion" className="fs-5 form-label text-white mb-0">Descripcion</label>
           <textarea className="form-control rounded-0" id="exampleInputPassword1" aria-describedby="descripcionHelp"{...register("descripcion")} cols="20" rows="3" maxLength="500" placeholder="Sé puntual y conciso" required></textarea>
         </div>
-        <button type="submit" className="btn-consultas btn rounded-0 border-0 px-5" data-bs-toggle="modal" data-bs-target="#exampleModal" >Enviar</button>
+        <button type="submit" className="btn-consultas btn rounded-0 border-0 px-5" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={()=>{resetearForm()}} >Enviar</button>
       </form>          
       </div>
 
