@@ -61,8 +61,8 @@ const UsuarioRegistrado = () => {
               {                
                 consultas.map(consulta =>(
                   <tr id={devolverEstado(consulta.resuelta)}>                    
-                    <td><a href={`mailto:${consulta.email}`}>{consulta.email}</a></td>
-                    <td className="fw-bold text-break text-uppercase">{consulta.motivo}</td>
+                    <td className="email-usuarioreg" ><a href={`mailto:${consulta.email}`}>{consulta.email}</a></td>
+                    <td className="motivo-usuarioreg fw-bold text-break text-uppercase">{consulta.motivo}</td>
                     <td className="text-break fst-italic">{consulta.descripcion}</td>
                     <td className="text-uppercase fw-bold">{devolverEstado(consulta.resuelta)}</td>                     
                       {consulta.resuelta === false?
