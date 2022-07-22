@@ -25,10 +25,12 @@ const UsuarioRegistrado = () => {
   }
 
   const responderConsulta = async(id) => { 
-    console.log(id)   
+    
+    const accessToken = localStorage.getItem('token')
+    console.log(accessToken)
     const resp = await fetch('http://localhost:8000/consultas/actualizar', {
       method: 'PUT',
-      body: JSON.stringify(id),
+      body: JSON.stringify(id,accessToken),
       headers: 
       {
         "Content-Type": "application/json"
