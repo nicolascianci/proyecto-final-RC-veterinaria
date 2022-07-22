@@ -16,6 +16,8 @@ const Login = () => {
       }
     })
     const json = await resp.json()
+    console.log(json)
+    localStorage.setItem('token',json.token)
     navigate("/usuarioregistrado", { replace: true });
   }
 
