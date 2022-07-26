@@ -1,3 +1,29 @@
 .consultas-veterinario{
-  height: 90vh;
+  height: auto;
+}
+
+.size{
+  width: 10%;
+}
+
+#Resuelta{
+  background-color: #B7B4B7;
+}
+
+@media (max-width: 767.98px){
+  .email-usuarioreg{
+    font-size: 10px;
+  }
+  .motivo-usuarioreg{
+    font-size: small;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .email-usuarioreg{
+    font-size: 10px;
+  }
+  .motivo-usuarioreg{
+    font-size: small;
+  }
 }
