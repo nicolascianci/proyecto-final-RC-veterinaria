@@ -2,10 +2,6 @@ import React from 'react';
 import './Consulta.css';
 import { useForm } from "react-hook-form";
 import imageConsulta from '../assests/images/image-consulta.jpg';
-<<<<<<< HEAD
-import { Link } from 'react-router-dom';
-=======
->>>>>>> 9b19c588fac861d50423bafdb3e800ac60dd9a18
 
 const Consulta = () => {
   const { register, handleSubmit } = useForm();
@@ -18,9 +14,6 @@ const Consulta = () => {
         "Content-Type": "application/json"
       }    
     })
-<<<<<<< HEAD
-  } 
-=======
    
   }
 
@@ -28,7 +21,6 @@ const Consulta = () => {
     document.getElementById("formconsulta").reset()
   }
 
->>>>>>> 9b19c588fac861d50423bafdb3e800ac60dd9a18
 
   return (
     <div className="contacto d-flex justify-content-between align-items-center p-5">
@@ -40,40 +32,6 @@ const Consulta = () => {
 </div>
 
       <div className="formulario-consultas w-50 p-3">
-<<<<<<< HEAD
-      <form onSubmit={handleSubmit(onSubmit)} id="formularioconsulta">
-        <div className="mb-2">
-          <label for="exampleInputEmail1" className="fs-5 form-label text-white mb-0">Email</label>
-          <input type="email" className="fs-5 form-control rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" {...register("email")} maxLength="30" required/>
-        </div>
-        <div className="mb-2">
-          <label for="exampleInputMotivo" className="fs-5 form-label text-white mb-0">Motivo</label>
-          <input type="text" className="fs-5 form-control rounded-0" id="exampleInputPassword1" aria-describedby="motivoHelp" {...register("motivo")} maxLength="30" required/>
-        </div>
-        <div className="mb-2">
-          <label for="exampleInputDescripcion" className="fs-5 form-label text-white mb-0">Descripción</label>
-          <textarea className="form-control rounded-0" id="exampleInputPassword1" aria-describedby="descripcionHelp"{...register("descripcion")} cols="20" rows="3" maxLength="500" required></textarea>
-        </div>
-        <button type="submit" className="btn-consultas btn rounded-0 border-0 px-5"data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar</button>
-      </form>          
-      </div>
-
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body">
-        ¡Tu consulta ha sido enviada exitosamente! <strong>En breve nos comunicaremos con vos vía email</strong>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <a href="/">
-        <button type="button" class="btn btn-primary">Volver a página principal</button>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-=======
       <form onSubmit={handleSubmit(onSubmit)} id="formconsulta">
         <div className="mb-2">
           <label for="exampleInputEmail1" className="fs-5 form-label text-white mb-0">Email</label>
@@ -105,7 +63,6 @@ const Consulta = () => {
           </div>
         </div>
       </div>
->>>>>>> 9b19c588fac861d50423bafdb3e800ac60dd9a18
     </div>
   );
 };
