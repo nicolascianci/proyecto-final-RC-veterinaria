@@ -8,7 +8,7 @@ const Ubicacion = () => {
       <ul className="texto-ubicacion text-light m-0 fs-5">
         <ol className="ps-0"><strong>La Huellita Veterinaria</strong></ol>
         <ol className="ps-0">📍 General Paz 576, San Miguel de Tucumán</ol>
-        <ol className="ps-0">📞 +5493815783030</ol>
+        <ol className="ps-0">📞 +549 381 5783030</ol>
         <ol className="ps-0">📧 @academy@rollingcodeschool.com</ol>
       </ul>
     </section>
