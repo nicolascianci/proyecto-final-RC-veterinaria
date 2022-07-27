@@ -27,7 +27,7 @@ const Nosotros = () => {
     <h4><strong>Pasión</strong></h4>
     <h5>Somos unos enamorados de nuestra profesión y eso nos hace desempeñarla con orgullo y entusiasmo.</h5>
     <h4><strong>Actualidad</strong></h4>
-    <h5>Nos comprometemos a estar en permanente formación, para ofrecer a nuestros pacientes siempre la mejor atención.</h5>
+    <h5>Nos comprometemos a estar en permanente formación, para ofrecer a nuestros pacientes la mejor atención.</h5>
     <h4><strong>Responsabilidad</strong></h4>
     <h5>Estamos concienciados de que nuestro trabajo repercute en la salud pública y en el bienestar de la sociedad.</h5>
 
