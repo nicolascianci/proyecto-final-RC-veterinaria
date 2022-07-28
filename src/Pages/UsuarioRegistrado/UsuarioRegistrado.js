@@ -15,14 +15,14 @@ const devolverEstado = (Estado) =>{
 const UsuarioRegistrado = () => {
   const [consultas, setConsultas] = useState([])
   const getData = async() => {
-    const data = await fetch('http://localhost:8000/consultas')
+    const data = await fetch('https://heroku-veterinaria-rolling.herokuapp.com/consultas')
     const json = await data.json()    
     setConsultas(json.consultas)
   }
 
   const ResponderConsulta = async(id) => { 
     console.log(id)   
-    const resp = await fetch('http://localhost:8000/consultas/actualizar', {
+    const resp = await fetch('https://heroku-veterinaria-rolling.herokuapp.com/actualizar', {
       method: 'PUT',
       body: JSON.stringify(id),
       headers: 
