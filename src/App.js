@@ -14,8 +14,8 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <Navbar />
-       <Routes>
+      <Navbar />
+      <Routes>
         <Route path='/' element={<Home />} />
         <Route path='*' element={<Error />} />
         <Route path='/nosotros' element={<Nosotros />} />
@@ -23,8 +23,8 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/consulta' element={<Consulta />} />
         <Route path='/usuarioregistrado' element={<UsuarioRegistrado />} />
-       </Routes>
-       <Footer />
+      </Routes>
+      <Footer />
       </BrowserRouter>
     </div>
   );

@@ -21,13 +21,13 @@ const Nosotros = () => {
 <div className="texto-valores mt-4 mb-2">
 <h3>Valores</h3>
     <h4><strong>Profesionalidad</strong></h4>
-    <h5>Buscamos siempre el mejor procedimiento, adaptándonos a las circunstancias individuales de cada caso.</h5>
+    <h5>Buscamos siempre el mejor procedimiento, adaptándonos a las circunstancias de cada caso.</h5>
     <h4><strong>Cercanía</strong></h4>
     <h5>Centramos nuestro esfuerzo en la satisfacción del cliente, comprendiendo que, para la mayoría, su mascota es uno más de la familia.</h5>
     <h4><strong>Pasión</strong></h4>
     <h5>Somos unos enamorados de nuestra profesión y eso nos hace desempeñarla con orgullo y entusiasmo.</h5>
     <h4><strong>Actualidad</strong></h4>
-    <h5>Nos comprometemos a estar en permanente formación, para ofrecer a nuestros pacientes siempre la mejor atención.</h5>
+    <h5>Nos comprometemos a estar en permanente formación, para ofrecer a nuestros pacientes la mejor atención.</h5>
     <h4><strong>Responsabilidad</strong></h4>
     <h5>Estamos concienciados de que nuestro trabajo repercute en la salud pública y en el bienestar de la sociedad.</h5>
 

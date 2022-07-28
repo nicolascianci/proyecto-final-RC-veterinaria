@@ -16,6 +16,8 @@ const Login = () => {
       }
     })
     const json = await resp.json()
+    console.log(json)
+    localStorage.setItem('token',json.token)
     navigate("/usuarioregistrado", { replace: true });
   }
 
@@ -31,7 +33,7 @@ const Login = () => {
     <form className="w-75" onSubmit={handleSubmit(onSubmit)}>
       <div class="mb-3">
         <label for="exampleInputEmail1" className="text-light form-label fs-3">Email</label>
-        <input type="email" className="border-0 rounded-0 form-control fs-5 p-2" id="exampleInputEmail1" aria-describedby="emailHelp" {...register("email")} required/>
+        <input type="email" className="border-0 rounded-0 form-control fs-5 p-2" id="exampleInputEmail1" aria-describedby="emailHelp" {...register("email")} pattern='^[^@]+@[^@]+\.[a-zA-Z]{2,}$' placeholder="nombre@email.com" required/>
       </div>
       <div class="mb-3">
         <label for="exampleInputPassword1" className="text-light form-label fs-3">Contraseña</label>
