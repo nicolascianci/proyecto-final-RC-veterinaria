@@ -19,16 +19,14 @@ const refrescar = () => {
 const UsuarioRegistrado = () => {
   const [consultas, setConsultas] = useState([])
   const getData = async() => {
-    const data = await fetch('http://localhost:8000/consultas')
+    const data = await fetch('https://heroku-veterinaria-rolling.herokuapp.com/consultas')
     const json = await data.json()    
     setConsultas(json.consultas)
   }
 
-  const responderConsulta = async(id) => { 
-    
+  const ResponderConsulta = async(id) => { 
     const accessToken = localStorage.getItem('token')
-    console.log(accessToken)
-    const resp = await fetch('http://localhost:8000/consultas/actualizar', {
+    const resp = await fetch('https://heroku-veterinaria-rolling.herokuapp.com/actualizar', {
       method: 'PUT',
       body: JSON.stringify(id,accessToken),
       headers: 
@@ -69,7 +67,7 @@ const UsuarioRegistrado = () => {
                     <td className="text-uppercase fw-bold">{devolverEstado(consulta.resuelta)}</td>                     
                       {consulta.resuelta === false?
                       <td>
-                          <button className='btn btn-warning border-0 rounded-0' onClick={() => {responderConsulta(consulta); refrescar()
+                          <button className='btn btn-warning border-0 rounded-0' onClick={() => {ResponderConsulta(consulta); refrescar()
                           }} >
                           Respondida
                           </button>

@@ -7,7 +7,7 @@ const Consulta = () => {
   const { register, handleSubmit } = useForm();
 
   const onSubmit = async(data) => {
-    const resp = await fetch('http://localhost:8000/consultas', {
+    const resp = await fetch('https://heroku-veterinaria-rolling.herokuapp.com/consultas', {
       method: 'POST',
       body: JSON.stringify(data),
       headers: {
