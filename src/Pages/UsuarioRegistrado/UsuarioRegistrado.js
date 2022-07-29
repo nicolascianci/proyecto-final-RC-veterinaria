@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
-import './UsuarioRegistrado.css'
+import './UsuarioRegistrado.css';
 
 
 const devolverEstado = (Estado) =>{
@@ -12,8 +12,8 @@ const devolverEstado = (Estado) =>{
   }
 }
 
-const refrescar = () => {
-  window.location.reload()
+const refrescar = async() => {
+  await window.location.reload();
 }
 
 const UsuarioRegistrado = () => {
@@ -24,17 +24,22 @@ const UsuarioRegistrado = () => {
     setConsultas(json.consultas)
   }
 
-  const ResponderConsulta = async(id) => { 
+  const ResponderConsulta = async(id) => {
+    
     const accessToken = localStorage.getItem('token')
-    const resp = await fetch('https://heroku-veterinaria-rolling.herokuapp.com/actualizar', {
+    console.log(accessToken)
+    console.log(id)
+    const resp = await fetch('https://heroku-veterinaria-rolling.herokuapp.com/consultas/actualizar', {
       method: 'PUT',
       body: JSON.stringify(id,accessToken),
       headers: 
       {
         "Content-Type": "application/json"
       }
-    })  
-
+    })
+    const json = await resp.json()
+    console.log(json)
+    setInterval("location.reload()",2000);
   }
 
   useEffect(() => {
@@ -67,7 +72,7 @@ const UsuarioRegistrado = () => {
                     <td className="text-uppercase fw-bold">{devolverEstado(consulta.resuelta)}</td>                     
                       {consulta.resuelta === false?
                       <td>
-                          <button className='btn btn-warning border-0 rounded-0' onClick={() => {ResponderConsulta(consulta); refrescar()
+                          <button className='btn btn-warning border-0 rounded-0' onClick={() => {ResponderConsulta(consulta); //refrescar()
                           }} >
                           Respondida
                           </button>

@@ -7,6 +7,7 @@ const Consulta = () => {
   const { register, handleSubmit } = useForm();
 
   const onSubmit = async(data) => {
+    console.log(data)
     const resp = await fetch('https://heroku-veterinaria-rolling.herokuapp.com/consultas', {
       method: 'POST',
       body: JSON.stringify(data),
@@ -45,7 +46,7 @@ const Consulta = () => {
           <label for="exampleInputDescripcion" className="fs-5 form-label text-white mb-0">Descripcion</label>
           <textarea className="form-control rounded-0" id="exampleInputPassword1" aria-describedby="descripcionHelp"{...register("descripcion")} cols="20" rows="3" maxLength="500" placeholder="Sé puntual y conciso" required></textarea>
         </div>
-        <button type="submit" className="btn-consultas btn rounded-0 border-0 px-5" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={()=>{resetearForm()}} >Enviar</button>
+        <button type="submit" className="btn-consultas btn rounded-0 border-0 px-5" data-bs-toggle="modal" data-bs-target="#exampleModal" >Enviar</button>
       </form>          
       </div>
 
