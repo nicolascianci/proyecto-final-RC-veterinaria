@@ -1,3 +1,4 @@
+/* eslint-disable no-implied-eval */
 import React, { useState } from 'react';
 import { useEffect } from 'react';
 import './UsuarioRegistrado.css';
