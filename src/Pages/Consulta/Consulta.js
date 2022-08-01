@@ -14,13 +14,10 @@ const Consulta = () => {
       headers: {
         "Content-Type": "application/json"
       }    
-    })
-   
-  }
-
-  const resetearForm = () => {
-    document.getElementById("formconsulta").reset()
-  }
+    })    
+    const json = await resp.json()
+    console.log(json)
+  }  
 
 
   return (

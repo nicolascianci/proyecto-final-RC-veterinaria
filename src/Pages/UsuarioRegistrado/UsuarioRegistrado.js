@@ -12,9 +12,6 @@ const devolverEstado = (Estado) =>{
   }
 }
 
-const refrescar = async() => {
-  await window.location.reload();
-}
 
 const UsuarioRegistrado = () => {
   const [consultas, setConsultas] = useState([])
@@ -39,7 +36,8 @@ const UsuarioRegistrado = () => {
     })
     const json = await resp.json()
     console.log(json)
-    setInterval("location.reload()",2000);
+    
+    setInterval("location.reload()",1000);
   }
 
   useEffect(() => {
