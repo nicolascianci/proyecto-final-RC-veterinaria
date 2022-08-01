@@ -6,7 +6,7 @@ import ButtonConsulta from "../ButtonConsulta/ButtonConsulta";
 import ButtonSesion from "../ButtonSesion/ButtonSesion";
 
 const Navbar = () => {
-  const token = localStorage.getItem('token')
+  const token = localStorage.getItem('token')  
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light p-0">
@@ -24,11 +24,11 @@ const Navbar = () => {
           <Link className="nav-link text-light fs-5" aria-current="page" to="/servicios">Servicios</Link>
       </ul>
       <div className="d-flex justify-content-center">
-        <div className="botones-navbar">
-      <ButtonConsulta />
-      {
-        !token && <ButtonSesion />
+        <div className="botones-navbar">      
+      {       
+        !token ? <ButtonSesion /> : <p></p>
       }
+      <ButtonConsulta />
       </div>
       </div>
     </div>
